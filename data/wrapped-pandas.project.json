@@ -1,0 +1,14 @@
+{
+  "contract": "0x663e4229142a27f00bafb5d087e1e730648314c3",
+  "name": "Wrapped Pandas",
+  "description": "Test Test",
+  "image": "https://storage.googleapis.com/opensea-prod.appspot.com/0x663e4229142a27f00bafb5d087e1e730648314c3/1.png",
+  "external_link": "https://wrappedpandas.com",
+  "symbol": "WPE",
+  "links": {
+    "site": "https://wrappedpandas.com",
+    "openSea": "https://opensea.io/collection/pandaearth",
+    "twitter": "https://twitter.com/PunkScape_ETH",
+    "discord": "https://discord.gg/aPS3Hre57D"
+  }
+}

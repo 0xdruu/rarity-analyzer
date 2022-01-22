@@ -12,9 +12,7 @@ export async function generateRarityFiles({
     console.log('# generateRarityFiles');
 
     const ordered = [
-        'punkscapes',
-        'one-day-punks',
-        'artblocks-catblocks',
+        'wrapped-pandas'
     ];
 
 
@@ -108,6 +106,7 @@ const buildProjectRarityFiles = async ({
             .filter(x=>x.value !== MISSING_ATTRIBUTE_VALUE)
             .map(x=>`${x.trait_type}:::${x.value}`)
         )].sort();
+
         const projectRarity : INftProjectRarityDocument = {
             project: projectMetadata,
             // tokens: rarityResult.map(x => ({
@@ -130,7 +129,7 @@ const buildProjectRarityFiles = async ({
                 trait_type: x.trait_type,
                 trait_value: x.value,
                 tokenIds: rarityResult
-                    .filter(t=>t.attributeRarities.some(a=>a.trait_type===x.trait_type && a.value===x.value))
+                    .filter(t=>t.attributeRarities.some(a=>a.trait_type === x.trait_type && String(a.value) === String(x.value)))
                     .map(t=>t.nft.id)
                     ,
             }))

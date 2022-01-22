@@ -53,6 +53,7 @@ type INftProjectRarityData = {
     contractAddress?: string;
 };
 const loadProjectRarityData = (doc: INftProjectRarityDocument): INftProjectRarityData => {
+    debugger;
     const tokenLookupsSource = sortTraits(doc.tokenLookups,'default');
 
     const traitTypes = [...new Set(tokenLookupsSource.map(x=>x.trait_type))];
@@ -64,6 +65,7 @@ const loadProjectRarityData = (doc: INftProjectRarityDocument): INftProjectRarit
 
         const includedTokenIds = new Set(traitTypeTokenLookups.flatMap(x=>x.tokenIds));
         const missingTokenIds = doc.tokenIdsByRank.filter(t => !includedTokenIds.has(t));
+        debugger;
         // Missing
         if(missingTokenIds.length){
             tokenLookupsSource.unshift({
@@ -270,7 +272,7 @@ export const TraitTypesList = ({
     onReset: () => void,
 })=>{
     const [isExpanded, setIsExpanded] = useState(true);
-   
+
     return (
         <>
             <div className='nft-trait-types-header'>

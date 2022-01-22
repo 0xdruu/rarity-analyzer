@@ -81,7 +81,7 @@ export function calculateRarity(metadataRaw: INftMetadata[], options?: { include
         ];
     });
 
-    const allAttributes = metadata.flatMap(x => x.attributes).filter(x => !!x.value);
+    const allAttributes = metadata.flatMap(x => x.attributes);
     const allAttributesValuesMap = new Map(allAttributes.map(x=> [x.trait_type, [] as string[]]));
 
     allAttributes.forEach(x => {

@@ -1,12 +1,12 @@
 {
   "contract": "0x663e4229142a27f00bafb5d087e1e730648314c3",
-  "name": "Wrapped Pandas",
-  "description": "Test Test",
+  "name": "Panda Earth (2018)",
+  "description": "This is a test site to help validate Panda traits for wrapping",
   "image": "https://storage.googleapis.com/opensea-prod.appspot.com/0x663e4229142a27f00bafb5d087e1e730648314c3/1.png",
-  "external_link": "https://wrappedpandas.com",
-  "symbol": "WPE",
+  "external_link": "https://pandaearthnft.com",
+  "symbol": "PE",
   "links": {
-    "site": "https://wrappedpandas.com",
+    "site": "https://pandaearthnft.com",
     "openSea": "https://opensea.io/collection/pandaearth",
     "twitter": "https://twitter.com/PunkScape_ETH",
     "discord": "https://discord.gg/aPS3Hre57D"
